@@ -23,14 +23,17 @@ class MyHomeScreen extends StatelessWidget {
               children: [
                 Text(
                   'Team CNTT',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
                 ),
+                SizedBox(height: 20),
                 buildRowLayout(),
-                SizedBox(height: 50),
-                Image.network(
-                  'https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/328054849_696618261931721_3882564888385819682_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=XUEGEosPmcYAX-guvps&_nc_ht=scontent-sin6-1.xx&oh=00_AfBZuceExn4vD58dwjEHec5xSIHGLseWZWHJzTn_cxzjrg&oe=6402F2EA',
-                  width: 500,
+                SizedBox(height: 20),
+                Image.asset(
+                  'assets/logo.png',
+                  width: 200,
+                  height: 200,
                 ),
+                SizedBox(height: 20),
                 ElevatedButton(
                     onPressed: () {
                       ScaffoldMessenger.of(context).showSnackBar(
@@ -38,9 +41,7 @@ class MyHomeScreen extends StatelessWidget {
                     },
                     child: Text('click')),
               ],
-            )
-        )
-    );
+            )));
   }
 }
 
