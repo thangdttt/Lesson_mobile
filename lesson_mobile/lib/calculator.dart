@@ -38,11 +38,12 @@ class Operation extends State<HomePage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.network(
-                  'https://chonmuachuan.com/wp-content/uploads/2019/04/may-tinh-bo-tui-vinacal-co-tot-khong.jpg',
+                Image.asset(
+                  'assets/calculator.png',
                   width: 150,
                   height: 150,
                 ),
+                const SizedBox(height: 20),
                 TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
